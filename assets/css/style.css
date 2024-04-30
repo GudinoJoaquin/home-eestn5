@@ -265,9 +265,7 @@ footer {
     .parallax-completo {
         height: 100vh; /* Establece la altura al 90% de la ventana */
         width: 100%;
-        background-size: cover; /* La imagen de fondo se expandirá para cubrir completamente el contenedor */
-        background-position: center; /* Centra la imagen */
-        background-repeat: no-repeat; /* Evita que la imagen se repita */
+        background: radial-gradient(circle, rgba(0, 0, 0, 0.664) 100%, rgba(255,255,255,0) 100%), url('../img/idi2_OLD.jpeg');
     }
 
     .options a {
