@@ -29,7 +29,7 @@
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-#browser {
+/* #browser {
   background-color: whitesmoke;
   position: fixed;
   width: 100%;
@@ -39,9 +39,9 @@
   justify-content: space-between;
   align-items: center;
   z-index: 999;
-}
+} */
 
-#logo {
+/* #logo {
   width: 5vw;
   height: auto;
   margin-right: 20px;
@@ -81,7 +81,7 @@
 
 .options a:hover::before {
   width: 100%;
-}
+} */
 
 .parallax-completo {
   width: 100%;
@@ -116,11 +116,11 @@
 
 #title,
 #subtitle {
-  font-family: fantasy;
+  font-family: "system-ui";
   font-size: 6vw;
   background-color: transparent;
   text-align: center;
-  color: rgb(255, 0, 0);
+  color: white;
   text-shadow: -2px -2px 0 rgb(0, 0, 0), 2px -2px 0 rgb(0, 0, 0),
     -2px 2px 0 rgb(0, 0, 0), 2px 2px 0 rgb(0, 0, 0);
 }
@@ -159,8 +159,8 @@
   z-index: 1;
   opacity: 0;
   transition: all 0.3s;
-  border-top-width: 1px;
-  border-bottom-width: 1px;
+  border-top-width: 2px;
+  border-bottom-width: 2px;
   border-top-style: solid;
   border-bottom-style: solid;
   border-top-color: rgba(255, 0, 0, 0.5);
@@ -222,11 +222,11 @@
   cursor: pointer;
 }
 
-.btn-info p{
-    margin-top: 20px;
-    color: black;
-    font-size: 20px;
-    font-weight: 600;
+.btn-info p {
+  margin-top: 20px;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 /* Estilos para el footer */
@@ -367,12 +367,23 @@ footer {
     flex-basis: 100;
     backdrop-filter: blur(10px) brightness(0.8);
     width: 50%;
-    height: 18vh;
+    height: 2vh;
     margin-bottom: 20px;
     text-align: center;
     transition: all 0.3s;
     border-radius: 20px;
     box-shadow: 0 4px 6px 6px rgba(0, 0, 0, 0.5);
     color: white;
+  }
+
+  .btn-info p{
+    transform: translateY(-10px);
+  }
+
+  .btn-info img {
+    transform: translateY(-10px);
+    margin-top: -25px;
+    width: 30%;
+    margin-bottom: -20px;
   }
 }
