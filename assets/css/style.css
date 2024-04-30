@@ -360,7 +360,7 @@ footer {
     gap: 10px;
     margin: 20px;
     align-items: center;
-    transform: translateY(-30px);
+    transform: translateY(-15px);
   }
 
   .btn-info {
@@ -377,7 +377,7 @@ footer {
     color: white;
   }
 
-  .btn-info p{
+  .btn-info p {
     transform: translateY(-10px);
   }
 
