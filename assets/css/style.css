@@ -302,7 +302,7 @@ footer {
   /* Estilos para dispositivos móviles */
 
   .parallax-completo {
-    height: 100vh; /* Establece la altura al 90% de la ventana */
+    height: 105vh; /* Establece la altura al 90% de la ventana */
     width: 100%;
     background: radial-gradient(
         circle,
@@ -323,7 +323,7 @@ footer {
   }
 
   .title-container {
-    margin-top: 10vw; /* Ajusta la posición vertical del título */
+    margin-top: 5vw; /* Ajusta la posición vertical del título */
     width: 100vw; /* Establece el ancho al 100% de la ventana */
   }
 
@@ -360,7 +360,7 @@ footer {
     gap: 10px;
     margin: 20px;
     align-items: center;
-    transform: translateY(-40px);
+    transform: translateY(-100px);
   }
 
   .btn-info {
