@@ -1,0 +1,313 @@
+:root {
+    --verde-oscuro: #073501; /* Color verde oscuro */
+    --rojo-oscuro: #3d0000; /* Color rojo oscuro */
+}
+
+
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 2px;
+    height: 2px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f100;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #073501;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #3d0000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+#browser {
+    background-color: whitesmoke;
+    position: fixed;
+    width: 100%;
+    height: auto;
+    padding: 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+}
+
+#logo {
+    width: 5vw;
+    height: auto;
+    margin-right: 20px;
+    background-color: transparent;
+    transition: scale .3s ease;
+    cursor: pointer;
+}
+
+#logo:hover {
+    transition: scale .3s ease;
+}
+
+.options {
+    display: flex;
+}
+
+.options a {
+    margin-right: 20px;
+    color: rgb(7, 44, 3);
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 1.2vw;
+    position: relative;
+    overflow: hidden;
+}
+
+.options a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: rgb(107, 4, 4);
+    transition: width 0.3s ease-in-out;
+}
+
+.options a:hover::before {
+    width: 100%;
+}
+
+
+.parallax-completo {
+    width: 100%;
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.664) 100%, rgba(255,255,255,0) 100%),url('../img/idi2o.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Añade esta línea para que los elementos se posicionen uno debajo del otro */
+    text-align: center; /* Añade esta línea para centrar el texto */
+}
+
+
+.title-container {
+    top: 30vh; /* Ajustar la posición en pantallas más grandes */
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    width: 50vw;
+    margin: auto; /* Centrar horizontalmente */
+}
+
+#title, #subtitle {
+    font-family: fantasy;
+    font-size: 6vw; 
+    background-color: transparent;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-shadow: -2px -2px 0 rgb(0, 0, 0), 2px -2px 0 rgb(0, 0, 0), -2px 2px 0 rgb(0, 0, 0), 2px 2px 0 rgb(0, 0, 0);
+}
+
+#subtitle {
+    font-size: 3vw; 
+    font-family: 'system-ui';
+}
+
+.title-container hr {
+    height: 2px;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.btn-one {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    margin-top: 6vw;
+    font-size: 2vw;
+    color: #ffffff;
+    transition: all 0.3s;
+    position: relative;
+    cursor: pointer;
+  }
+  .btn-one span {
+    transition: all 0.3s;
+  }
+  .btn-one::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-color: rgba(255, 0, 0, 0.5);
+    border-bottom-color: rgba(23, 138, 0, 0.5);
+    transform: scale(0.1, 1);
+  }
+  .btn-one:hover span {
+    letter-spacing: 2px;
+  }
+  .btn-one:hover::before {
+    opacity: 1; 
+    transform: scale(1, 1); 
+  }
+  .btn-one::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.3s;
+    background-color: rgba(255, 255, 255, 0);
+  }
+  .btn-one:hover::after {
+    opacity: 0; 
+    transform: scale(0.1, 1);
+  }
+
+
+
+/* Estilos para el footer */
+footer {
+    width: 100%;
+    background-color: whitesmoke; /* Fondo verde oscuro */
+    color: #222; /* Texto negro/gris por defecto */
+    font-family: Arial, sans-serif;
+}
+
+.footer-content {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+}
+
+.footer-info,
+.footer-nav,
+.footer-social {
+    flex: 1 1 30%; /* Distribuye el espacio en tres columnas */
+    padding: 10px;
+    text-align: center; /* Centra el texto */
+}
+
+.footer-info h3,
+.footer-nav h3,
+.footer-social h3 {
+    padding: 1vw;
+    color: var(--verde-oscuro); /* Títulos en verde oscuro */
+}
+
+.footer-nav ul,
+.footer-social ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-nav ul li,
+.footer-social ul li {
+    margin-bottom: 5px;
+}
+
+.footer-nav ul li a,
+.footer-social ul li a {
+    color: #666; /* Color de los enlaces por defecto */
+    text-decoration: none; /* Quita la subrayado por defecto */
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+}
+
+.footer-nav ul li a:hover,
+.footer-social ul li a:hover {
+    color: var(--rojo-oscuro); /* Color rojo oscuro al hacer hover */
+    text-decoration: underline; /* Subrayado al hacer hover */
+}
+
+.footer-bottom {
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+@media (max-height: 1080px) and (max-width: 1920px) {
+
+    .parallax-completo {
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* Estilos para dispositivos móviles */
+
+    .parallax-completo {
+        height: 90vh; /* Establece la altura al 90% de la ventana */
+        width: 100%;
+        background-size: cover; /* La imagen de fondo se expandirá para cubrir completamente el contenedor */
+        background-position: center; /* Centra la imagen */
+        background-repeat: no-repeat; /* Evita que la imagen se repita */
+    }
+
+    .options a {
+        font-size: 12px; /* Reduce el tamaño de fuente de los enlaces */
+    }
+
+    #logo {
+        width: 40px; /* Redimensiona el logo */
+    }
+
+    .title-container {
+        margin-top: 35vw; /* Ajusta la posición vertical del título */
+        width: 100vw; /* Establece el ancho al 100% de la ventana */
+    }
+    
+    #title{
+        font-size: 10vw; /* Reduce el tamaño de fuente del título */
+    }
+    #subtitle{
+        font-size: 5vw; /* Reduce el tamaño de fuente del subtítulo */
+    }
+
+    .btn-one {
+        margin-top: 15vw; /* Ajusta el margen superior del botón */
+        font-size: 4vw; /* Reduce el tamaño de fuente del botón */
+    }
+
+    .footer-info h3,
+    .footer-nav h3,
+    .footer-social h3 {
+        font-size: 20px; /* Ajusta el tamaño de fuente de los títulos del footer */
+    }
+
+    .footer-nav ul li a, 
+    .footer-social ul li a{
+        font-size: 15px; /* Ajusta el tamaño de fuente de los enlaces del footer */
+    }
+
+    .footer-bottom {
+        font-size: 15px; /* Ajusta el tamaño de fuente del contenido del footer */
+    }
+}
+
