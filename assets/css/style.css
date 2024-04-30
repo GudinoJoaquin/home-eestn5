@@ -360,7 +360,7 @@ footer {
     gap: 10px;
     margin: 20px;
     align-items: center;
-    transform: translateY(-100px);
+    transform: translateY(-30px);
   }
 
   .btn-info {
