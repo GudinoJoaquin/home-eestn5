@@ -263,7 +263,7 @@ footer {
     /* Estilos para dispositivos móviles */
 
     .parallax-completo {
-        height: 90vh; /* Establece la altura al 90% de la ventana */
+        height: 100vh; /* Establece la altura al 90% de la ventana */
         width: 100%;
         background-size: cover; /* La imagen de fondo se expandirá para cubrir completamente el contenedor */
         background-position: center; /* Centra la imagen */
