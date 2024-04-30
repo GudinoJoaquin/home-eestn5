@@ -357,7 +357,7 @@ footer {
   .btn-container {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
     margin: 20px;
     align-items: center;
     transform: translateY(-40px);
