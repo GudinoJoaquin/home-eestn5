@@ -29,60 +29,6 @@
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-/* #browser {
-  background-color: whitesmoke;
-  position: fixed;
-  width: 100%;
-  height: auto;
-  padding: 1px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 999;
-} */
-
-/* #logo {
-  width: 5vw;
-  height: auto;
-  margin-right: 20px;
-  background-color: transparent;
-  transition: scale 0.3s ease;
-  cursor: pointer;
-}
-
-#logo:hover {
-  transition: scale 0.3s ease;
-}
-
-.options {
-  display: flex;
-}
-
-.options a {
-  margin-right: 20px;
-  color: rgb(7, 44, 3);
-  text-decoration: none;
-  font-family: sans-serif;
-  font-size: 1.2vw;
-  position: relative;
-  overflow: hidden;
-}
-
-.options a::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background-color: rgb(107, 4, 4);
-  transition: width 0.3s ease-in-out;
-}
-
-.options a:hover::before {
-  width: 100%;
-} */
-
 .parallax-completo {
   width: 100%;
   background: radial-gradient(
@@ -142,13 +88,27 @@
   margin-top: 6vw;
   font-size: 2vw;
   color: #ffffff;
-  transition: all 0.3s;
   position: relative;
   cursor: pointer;
+  padding-bottom: 6px;
+  animation: pulse 2s infinite alternate ease-in-out; /* Ajusta la velocidad de la animación */
 }
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    color: rgb(255, 0, 0); /* Color inicial: rojo */
+  }
+  100% {
+    transform: scale(1.1);
+    color: rgb(23, 138, 0); /* Color final: verde */
+  }
+}
+
 .btn-one span {
   transition: all 0.3s;
 }
+
 .btn-one::before {
   content: "";
   position: absolute;
@@ -163,17 +123,20 @@
   border-bottom-width: 2px;
   border-top-style: solid;
   border-bottom-style: solid;
-  border-top-color: rgba(255, 0, 0, 0.5);
-  border-bottom-color: rgba(23, 138, 0, 0.5);
+  border-top-color: rgb(255, 255, 255);
+  border-bottom-color: rgb(255, 255, 255);
   transform: scale(0.1, 1);
 }
+
 .btn-one:hover span {
   letter-spacing: 2px;
 }
+
 .btn-one:hover::before {
   opacity: 1;
   transform: scale(1, 1);
 }
+
 .btn-one::after {
   content: "";
   position: absolute;
@@ -185,10 +148,12 @@
   transition: all 0.3s;
   background-color: rgba(255, 255, 255, 0);
 }
+
 .btn-one:hover::after {
   opacity: 0;
   transform: scale(0.1, 1);
 }
+
 
 /* Estilos para los botones */
 
@@ -308,9 +273,7 @@ footer {
   /* Estilos para dispositivos móviles */
 
   .parallax-completo {
-    height: 105vh; /* Establece la altura al 90% de la ventana */
-    width: 100%;
-    background: radial-gradient(
+    background-image: radial-gradient(
         circle,
         rgba(0, 0, 0, 0.664) 100%,
         rgba(255, 255, 255, 0) 100%

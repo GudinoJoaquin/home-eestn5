@@ -1,0 +1,106 @@
+@keyframes logoAnimation {
+    0% {
+        transform: scale(1); /* Tamaño normal */
+    }
+    50% {
+        transform: scale(1.1); /* Aumentar tamaño al 110% */
+    }
+    100% {
+        transform: scale(1); /* Volver al tamaño normal */
+    }
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+
+#left-options,
+#right-options {
+    display: flex;
+    align-items: center;
+}
+
+#left-options a,
+#right-options a {
+    background-color: rgba(0, 0, 0, 0); /* Fondo transparente con un poco de opacidad */
+    color: rgba(255, 255, 255, 0);
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid rgba(255, 255, 255, 0);
+    margin: 0 10px;
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+#logo img {
+    position: absolute; /* Posiciona el logo a la izquierda */
+    left: 20px; /* Ajusta la posición del logo */
+    cursor: pointer;
+    height: 50px;
+    width: auto;
+    border-radius: 0%;
+    transition: all 0.3s ease; /* Añadir transición para el logo */
+    animation: logoAnimation 2s infinite; /* Aplicar animación al logo */
+}
+
+#navbar.clicked #left-options a,
+#navbar.clicked #right-options a {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: 1px solid white;
+    transition: all 0.3s ease;
+}
+
+#navbar.clicked #left-options a:hover,
+#navbar.clicked #right-options a:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    background-color: black;
+}
+
+#logo.clicked img {
+    animation-play-state: paused; /* Pausar la animación cuando se hace clic */
+}
+
+@media (max-width: 768px) {
+    #navbar {
+        padding: 5px 10px; /* Ajustar el padding para dispositivos móviles */
+    }
+
+    #left-options a,
+    #right-options a {
+        padding: 8px 12px; /* Ajustar el padding para dispositivos móviles */
+        font-size: 14px; /* Reducir el tamaño de la fuente para dispositivos móviles */
+    }
+
+    #logo img {
+        display: none;
+    }
+
+    #left-options a,
+    #right-options a {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    transition: all 0.3s ease;
+}
+
+    #left-options a:hover,
+    #right-options a:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    background-color: black;
+}
+}

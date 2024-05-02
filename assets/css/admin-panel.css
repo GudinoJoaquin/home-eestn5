@@ -1,0 +1,192 @@
+/* generales */
+/* Estilos del scrollbar en navegadores webkit (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+    width: 10px; /* Ancho del scrollbar */
+}
+
+/* Estilos de la barra de desplazamiento */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color de fondo de la barra de desplazamiento */
+}
+
+/* Estilos del mango del scrollbar */
+::-webkit-scrollbar-thumb {
+    background: #888; /* Color del mango del scrollbar */
+}
+
+/* Estilos del mango del scrollbar al pasar el ratón */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color del mango del scrollbar al pasar el ratón */
+}
+
+
+body {
+    width: 100vw;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100vw;
+    background: linear-gradient(to bottom right, rgba(255, 0, 0, 0.2), rgba(0, 128, 0, 0.2)), url('tu-imagen-aqui.jpg');
+    border-radius: 5vw;
+    box-shadow: #333;
+    max-width: 60vw;
+    margin: 20px auto;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 1px;
+}
+
+/* crear */
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    margin-top: 20px;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* editar */
+.anuncio {
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.3s ease;
+    transform-style: preserve-3d;
+    max-height: 400px; /* Establecer una altura máxima para evitar que el contenedor se vuelva demasiado grande */
+    overflow: hidden; /* Ocultar el desbordamiento del contenido */
+}
+
+.anuncio:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.anuncio h3 {
+    margin-top: 0;
+}
+
+.anuncio h4 {
+    margin-top: 5px;
+    color: #666;
+}
+
+.anuncio p {
+    margin: 10px 0;
+    color: #333;
+    white-space: nowrap; /* Evitar el retorno de línea */
+    overflow: hidden; /* Ocultar el desbordamiento del texto */
+    text-overflow: ellipsis; /* Mostrar puntos suspensivos (...) si el texto se desborda */
+}
+
+
+.formulario-edicion {
+    display: none;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.3s ease;
+    transform-style: preserve-3d;
+}
+
+.formulario-edicion:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.formulario-edicion form {
+    text-align: left;
+}
+
+.formulario-edicion input[type='text'],
+.formulario-edicion textarea {
+    width: calc(100% - 40px);
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.boton-editar-unico {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: orange;
+    color: #fff;
+    margin: 10px;
+}
+
+.boton-eliminar-unico {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: red;
+    color: #fff;
+}
+
+.boton-editar-unico:hover,
+.boton-eliminar-unico:hover {
+    background-color: rgba(0, 0, 0, 0.603);
+}
+
+.boton-enviar {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton-enviar:hover {
+    background-color: #0056b3;
+}
+
+.boton-guardar {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton-guardar:hover {
+    background-color: #218838;
+}
+.sin-anuncios {
+    text-align: center; 
+    font-family: Arial, sans-serif; 
+    color: #000000; 
+    font-size: 18px; 
+}
+

@@ -1,0 +1,84 @@
+/* Estilos para el formulario de inicio de sesión */
+/* Prohibido borrar o eliminar o modificar los estilos del h1 */
+h1 {
+    text-align: center;
+    font-size: 36px;
+    color: transparent;
+    animation: slideText 10s linear infinite; /* Animación de desplazamiento */
+    transition: color 0.5s ease; /* Transición suave del cambio de color */
+}
+
+/* Animación de desplazamiento horizontal */
+@keyframes slideText {
+    0% { transform: translateX(-50%); }
+    50% { transform: translateX(50%); }
+    100% { transform: translateX(-50%); }
+}
+
+/* Animación de desplazamiento horizontal */
+@keyframes slideText {
+    0% { transform: translateX(-50%); }
+    50% { transform: translateX(50%); }
+    100% { transform: translateX(-50%); }
+}
+
+
+
+form {
+    position: relative;
+    margin-top: 15%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+
+/* Estilos para los campos de entrada */
+input[type="text"],
+input[type="password"] {
+    width: calc(100% - 20px);
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+/* Estilos para los botones */
+button[type="submit"],
+button[type="button"] {
+    width: 45%; /* Misma anchura para ambos botones */
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Estilos para el botón de enviar */
+button[type="submit"] {
+    background-color: #4caf50; /* Color verde */
+    color: #fff;
+}
+
+/* Estilos para el botón de volver */
+button[type="button"] {
+    background-color: #f44336; /* Color rojo */
+    color: #fff;
+}
+
+/* Estilos para los botones al pasar el mouse */
+button:hover {
+    opacity: 0.8; /* Reducir la opacidad al pasar el mouse */
+}
+
+@media screen and (max-width: 767px) {
+    form {
+        margin-top: 30%;
+    }
+}

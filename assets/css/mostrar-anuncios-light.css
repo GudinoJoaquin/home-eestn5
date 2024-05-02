@@ -1,0 +1,135 @@
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 5px; /* Ancho del scroll */
+  height: 5px; /* Altura del scroll */
+}
+
+/* Cambiar el color del track (fondo del scroll) */
+::-webkit-scrollbar-track {
+  background: #f2f2f2; /* Color del track */
+  transition: background 0.5s ease; /* Transición suave para el cambio de color */
+}
+
+/* Cambiar el color y la forma del thumb (la parte deslizable del scroll) */
+::-webkit-scrollbar-thumb {
+  background: #ff0000; /* Color del thumb */
+  border-radius: 5px; /* Bordes redondeados */
+  transition: background 0.5s ease; /* Transición suave para el cambio de color */
+}
+
+/* Cambiar el color y la forma del thumb al pasar el ratón sobre él */
+::-webkit-scrollbar-thumb:hover {
+  background: #1eff00; /* Color del thumb al pasar el ratón */
+}
+
+/* Estilos generales */
+html {
+  scroll-behavior: smooth; /* Hacer que el scroll sea suave */
+  transition: background 0.5s ease, color 0.5s ease; /* Transición suave para el cambio de color de fondo y texto */
+  background-color: #f2f2f2; /* Color de fondo en modo claro */
+}
+
+body {
+  font-family: "system-ui";
+  transition: background 0.5s ease, color 0.5s ease; /* Transición suave para el cambio de color de fondo y texto */
+  background-color: #f2f2f2; /* Color de fondo en modo claro */
+}
+
+.container {
+  border-right: 2px dotted #1eff00;
+  border-left: 2px dotted #ff0000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: border-color 0.5s ease; /* Transición suave para el cambio de color de borde */
+}
+
+.anuncio-container {
+  width: 80vw;
+  height: 20vw;
+  margin: 30px;
+  display: flex;
+  overflow: hidden; /* Oculta cualquier contenido que exceda los bordes */
+  transform: perspective(1000px) rotateX(20deg); /* Perspectiva 3D inclinada */
+}
+
+.contenedor-imagen {
+  flex: 3;
+  max-height: auto; /* Establece la altura máxima del contenedor de imagen */
+}
+
+.contenedor-imagen img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 15px; /* Bordes redondeados en la esquina superior izquierda */
+  border-bottom-left-radius: 15px; /* Bordes redondeados en la esquina inferior izquierda */
+}
+
+.contenedor-contenido {
+  flex: 6;
+  padding: 10px;
+  border-top: 2px solid green; 
+}
+
+.contenedor-contenido h2, h4{
+  margin: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.contenedor-contenido h4{
+  color: red;
+}
+
+.contenedor-contenido p {
+  font-family: 'Arial', sans-serif; /* Fuente Arial */
+  color: #333; /* Color oscuro para los párrafos */
+  margin: 20px;
+  margin-top: 30px;
+}
+
+.contenedor-fecha {
+  flex: 1.5;
+  display: flex; /* Establece el contenedor como un contenedor flexible */
+  justify-content: flex-end; /* Coloca los elementos al final del contenedor (a la derecha en un contenedor horizontal) */
+  border-bottom: 2px solid red; 
+  border-right: 2px solid red;
+}
+
+.contenedor-fecha h3 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: green;
+  padding: 10px;
+  margin: 0; /* Elimina cualquier margen para evitar espacios adicionales */
+}
+
+@media screen and (max-width: 767px) {
+  /* Estilos para dispositivos móviles */
+  .anuncio-container {
+    height: auto; /* Altura automática */
+    margin: 15px 0; /* Margen superior e inferior reducido */
+  }
+
+  .contenedor-imagen {
+    flex: 1; /* Ocupar todo el espacio disponible */
+  }
+
+  .contenedor-contenido {
+    flex: 2; /* Ocupar más espacio que la fecha */
+    padding: 5px; /* Padding reducido */
+    border-top: none; /* Eliminar borde superior */
+  }
+
+  .contenedor-fecha {
+    flex: 1; /* Ocupar menos espacio que el contenido */
+  }
+
+  /* Reducir el tamaño de todos los textos */
+  .contenedor-contenido h2,
+  .contenedor-contenido h3,
+  .contenedor-contenido h4,
+  .contenedor-contenido p,
+  .contenedor-fecha h3 {
+    font-size: 12px; /* Tamaño de fuente reducido */
+    margin: 5px 0; /* Margen superior e inferior reducido */
+  }
+}
+

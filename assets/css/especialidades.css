@@ -29,60 +29,6 @@
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-/* #browser {
-    background-color: whitesmoke;
-    position: fixed;
-    width: 100%;
-    height: auto;
-    padding: 1px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 999;
-  } */
-
-/* #logo {
-    width: 5vw;
-    height: auto;
-    margin-right: 20px;
-    background-color: transparent;
-    transition: scale 0.3s ease;
-    cursor: pointer;
-  }
-  
-  #logo:hover {
-    transition: scale 0.3s ease;
-  }
-  
-  .options {
-    display: flex;
-  }
-  
-  .options a {
-    margin-right: 20px;
-    color: rgb(7, 44, 3);
-    text-decoration: none;
-    font-family: sans-serif;
-    font-size: 1.2vw;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .options a::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: rgb(107, 4, 4);
-    transition: width 0.3s ease-in-out;
-  }
-  
-  .options a:hover::before {
-    width: 100%;
-  } */
-
 .parallax-completo {
   width: 100%;
   background: radial-gradient(
@@ -109,7 +55,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  z-index: 3;
   width: 50vw;
   margin: auto; /* Centrar horizontalmente */
   margin-top: 5vw;
@@ -492,15 +437,14 @@ section {
     margin-top: 5vw;
   }
 
-  .especialidades-cont button {
-    margin-top: 10vw;
+.especialidades-cont button {
     font-size: 5vw;
     padding: 2vw 10vw;
     color: white;
     background: #f85c70;
     border: none;
     transition: all 0.3s;
-  }
+}
   .especialidades-cont button:hover {
     background: #f63750;
     transform: scale(1.3);
