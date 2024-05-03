@@ -49,7 +49,7 @@
 }
 
 .title-container {
-  top: 30vh; /* Ajustar la posición en pantallas más grandes */
+  top: 20vh; /* Ajustar la posición en pantallas más grandes */
   background-color: transparent;
   display: flex;
   flex-direction: column;

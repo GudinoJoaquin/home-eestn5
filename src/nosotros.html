@@ -13,20 +13,19 @@
   <body>
     <header>
       <nav id="navbar">
-        <div id="logo">
-            <img src="../assets/img/logo.svg" alt="Logo">
+        <div id="logo" onclick="ocultar()">
+          <img src="../assets/img/logo.svg" alt="Logo" />
+          <p>Menu</p>
         </div>
         <div class="container">
-            <div id="left-options">
-                <a href="#">Inicio</a>
-                <a href="#">Especialidades</a>
-            </div>
-            <div id="right-options">
-                <a href="#">Contacto</a>
-                <a href="#">Anuncios</a>
-            </div>
+          <div id="nav-content">
+            <a href="../index.html">Inicio</a>
+            <a href="./especialidades.html">Especialidades</a>
+            <a href="https://eest5mdp.edu.ar/contacto.html">Contacto</a>
+            <a href="./mostrarAnuncios.php">Anuncios</a>
+          </div>
         </div>
-    </nav>              
+      </nav>
     </header>
 
     <main>
@@ -78,7 +77,9 @@
           nosotros! Estamos aquí para ayudarte a alcanzar tus metas educativas y
           profesionales
         </p>
-        <button onclick="redirect('https://eest5mdp.edu.ar/contacto.html')">Contactanos</button>
+        <button onclick="redirect('https://eest5mdp.edu.ar/contacto.html')">
+          Contactanos
+        </button>
       </section>
 
       <footer>

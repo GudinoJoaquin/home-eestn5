@@ -1,12 +1,14 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const navbar = document.getElementById('navbar');
-    const logo = document.getElementById('logo');
-    const leftOptions = document.getElementById('left-options');
-    const rightOptions = document.getElementById('right-options');
-
-    logo.addEventListener('click', function () {
-        navbar.classList.toggle('clicked');
-        leftOptions.classList.toggle('show');
-        rightOptions.classList.toggle('show');
-    });
-});
+function ocultar() {
+  var navContent = document.getElementById("nav-content");
+  var nav = document.getElementById("navbar");
+  var logo = document.getElementById("logo").children;
+  if (navContent.style.display === "flex") {
+    navContent.style.display = "none";
+    nav.style.backgroundColor = "transparent";
+    nav.style.left = "-20px";
+  } else {
+    navContent.style.display = "flex";
+    nav.style.backgroundColor = "rgba(0, 0, 0, 0.7)";
+    nav.style.left = "0px";
+  }
+}

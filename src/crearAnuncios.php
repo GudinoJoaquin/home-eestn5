@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($_FILES['imagen']['size'] > 0) {
         $imagen_nombre = $_FILES['imagen']['name'];
         $imagen_temporal = $_FILES['imagen']['tmp_name'];
-        $ruta_imagen = '../imagenes/' . $imagen_nombre;
+        $ruta_imagen = '../assets/img' . $imagen_nombre;
 
         // Mover el archivo de imagen a la carpeta de destino
         if (move_uploaded_file($imagen_temporal, $ruta_imagen)) {
@@ -81,7 +81,8 @@ $conn->close();
                 Subtítulo: <input type="text" name="subtitulo"><br><br>
                 Mensaje: <textarea name="mensaje" rows="4" cols="50" style="resize: none;"></textarea><br><br>
                 Imagen:
-                <input type="file" class="custom-file-upload" id="imagen" name="imagen" accept="image/*,.pdf"> <!-- Input para cargar la imagen -->
+                <input type="file" class="custom-file-upload" id="imagen" name="imagen" accept="image/*,.pdf">
+                <!-- Input para cargar la imagen -->
                 <input class="boton-enviar" type="submit" value="Enviar"> <!-- Botón de enviar el formulario -->
             </form>
         </div>
