@@ -438,16 +438,17 @@ section {
   }
 
   .especialidades-cont button {
-    font-size: 5vw;
-    padding: 2vw 10vw;
+    font-size: 3vw;
+    padding: 2vw 5vw;
     color: white;
     background: #f85c70;
     border: none;
     transition: all 0.3s;
+    left: 1px;
   }
   .especialidades-cont button:hover {
     background: #f63750;
-    transform: scale(1.3);
+    transform: scale(1.2);
     transition: all 0.3s;
   }
 }

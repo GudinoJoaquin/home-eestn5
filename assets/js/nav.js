@@ -8,7 +8,7 @@ function ocultar() {
     nav.style.left = "-20px";
   } else {
     navContent.style.display = "flex";
-    nav.style.backgroundColor = "rgba(0, 0, 0, 0.7)";
+    nav.style.backgroundColor = "rgba(0, 0, 0, 0.9)";
     nav.style.left = "0px";
   }
 }
