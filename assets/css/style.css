@@ -217,21 +217,6 @@
     font-size: 4vw; /* Reduce el tamaño de fuente del botón */
   }
 
-  .footer-info h3,
-  .footer-nav h3,
-  .footer-social h3 {
-    font-size: 20px; /* Ajusta el tamaño de fuente de los títulos del footer */
-  }
-
-  .footer-nav ul li a,
-  .footer-social ul li a {
-    font-size: 15px; /* Ajusta el tamaño de fuente de los enlaces del footer */
-  }
-
-  .footer-bottom {
-    font-size: 15px; /* Ajusta el tamaño de fuente del contenido del footer */
-  }
-
   .btn-container {
     display: flex;
     flex-direction: column;
@@ -266,8 +251,4 @@
     margin-bottom: -20px;
   }
 
-  .location iframe {
-    width: 70vw;
-    height: 70vw;
-  }
 }

@@ -138,6 +138,7 @@ footer {
   @media screen and (max-width: 768px) {
 
     footer {
+        padding-top: 25px; /* Ajusta el padding para hacer el footer menos alto */
       }
 
     .footer-content {
@@ -170,6 +171,13 @@ footer {
     }
   
     .contact-button {
-      width: 100%; /* Ocupa todo el ancho disponible */
+      cursor: pointer;
+      width: 100%;
+    }
+    
+    .contact-button:hover {
+      cursor: pointer;
+      background-color: #000000;
+      color: #FFFFFF;
     }
   }
