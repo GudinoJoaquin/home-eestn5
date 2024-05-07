@@ -1,5 +1,4 @@
 #navbar {
-  user-select: none;
   position: fixed;
   top: 0;
   left: -20px;
@@ -34,6 +33,7 @@
   transition: all 0.3s ease;
   cursor: default;
   font-size: 1.5vw;
+  user-select: none;
 }
 #nav-content a:hover {
   transform: scale(1.15);
@@ -48,6 +48,8 @@
   border-radius: 0%;
   transition: all 0.3s ease; /* Añadir transición para el logo */
   animation: logoAnimation 2s infinite; /* Aplicar animación al logo */
+  user-select: none;
+
 }
 #logo img:hover {
   transform: scale(1.1);
@@ -61,6 +63,8 @@
   font-size: 1.5vw;
   cursor: pointer;
   font-weight: 600;
+  user-select: none;
+
 }
 
 #logo p:first-letter {
