@@ -53,11 +53,12 @@
   background-color: transparent;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   justify-content: center;
-  width: 50vw;
+  text-align: start;
+  width: 90vw;
   margin: auto; /* Centrar horizontalmente */
-  margin-top: 5vw;
+  margin-top: 14vw;
 }
 
 .title-container p {
@@ -67,26 +68,18 @@
   font-size: 1.5vw;
 }
 
-#title,
-#subtitle {
+#title {
   font-family: "system-ui";
-  font-size: 4vw;
+  font-size: 6vw;
   background-color: transparent;
-  text-align: center;
+  text-align: start;
   color: white;
-  text-shadow: -2px -2px 0 rgb(0, 0, 0), 2px -2px 0 rgb(0, 0, 0),
-    -2px 2px 0 rgb(0, 0, 0), 2px 2px 0 rgb(0, 0, 0);
-}
-
-#subtitle {
-  font-size: 3vw;
-  font-family: "system-ui";
 }
 
 .btn-one {
   font-family: "system-ui";
   font-weight: bold;
-  font-size: 2vw;
+  font-size: 10vw;
   color: black;
   transition: all 0.3s;
   position: relative;
@@ -132,7 +125,7 @@
 
 .btn-container {
   display: flex;
-  gap: 40px;
+  gap: 90px;
   margin: 25px;
   align-items: center;
 }
@@ -242,16 +235,16 @@ section {
 
 .nav-esp {
   display: flex;
-  gap: 20px;
+  gap: 50px;
   list-style: none;
   justify-content: center;
   background-color: #f5f5f5;
-  margin: 0 10vw 0 10vw;
+  margin: 0 5vw 0 5vw;
 }
 
 .nav-esp li {
   padding: 0.5vw 3vw 0.5vw 3vw;
-  font-size: 1.3vw;
+  font-size: 1.6vw;
 }
 
 .especialidades-cont {
