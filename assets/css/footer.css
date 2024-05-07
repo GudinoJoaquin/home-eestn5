@@ -1,0 +1,175 @@
+footer {
+    background-color: #f2f2f2;
+    padding: 20px; /* Ajusta el padding para hacer el footer menos alto */
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan si el espacio es insuficiente */
+  }
+  
+  .footer-nav,
+  .footer-names,
+  .footer-social {
+    flex: 1;
+  }
+  
+  .footer-names {
+    text-align: center; /* Centra el texto horizontalmente */
+  }
+  
+  
+  .footer-names creators {
+    display: flex;
+    flex-direction: column; /* Apila los elementos verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+  }
+  
+  .footer-names a {
+    display: block;
+    color: #0000008a;
+    font-size: 12px;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-names a:last-child {
+    margin-bottom: 0; /* Elimina el margen inferior del último nombre */
+  }
+  
+  .footer-names a:hover {
+    color: #000;
+  }
+  
+  .footer-nav ul,
+  .footer-social ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center; /* Alinea el texto en el centro */
+  }
+  
+  .footer-nav a,
+  .footer-names a {
+    display: inline-block; /* Cambiado de block a inline-block para que estén en línea */
+    margin-right: 10px; /* Añade un margen entre los nombres */
+    color: #0000008a;
+    font-size: 12px;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-nav a:last-child,
+  .footer-names a:last-child {
+    margin-right: 0; /* Elimina el margen derecho del último elemento */
+  }
+  
+  .footer-nav a:hover,
+  .footer-names a:hover {
+    color: #2f0064;
+  }
+  
+  .footer-social li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .footer-social li:last-child {
+    margin-right: 0;
+  }
+  
+  .footer-social {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+  }
+  
+  .footer-social ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  .footer-social li {
+    margin-right: 10px;
+  }
+  
+  .footer-social img {
+    width: 35px;
+    height: auto;
+    border-radius: 100%;
+    transition: background-color 0.3s ease; /* Añadimos una transición suave para el color de fondo */
+  }
+
+  /* Personalización de la sombra para cada red social */
+.footer-social img[src="assets/img/facebook.png"]:hover {
+    background-color: rgb(59, 89, 153); /* Cambia el color de fondo al hacer hover para Facebook */
+  }
+  
+  .footer-social img[src="assets/img/gorjeo.png"]:hover {
+    background-color: rgb(29, 161, 242); /* Cambia el color de fondo al hacer hover para Twitter */
+  }
+  
+  .footer-social img[src="assets/img/instagram.png"]:hover {
+    background-color: rgb(216, 40, 119); /* Cambia el color de fondo al hacer hover para Instagram */
+  }
+  
+  .contact-button {
+    width: 50%;
+    display: inline-block;
+    padding: 10px;
+    background-color: transparent;
+    color: #000000;
+    text-decoration: none;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    transition: background-color 0.4s ease, color 0.3s ease; /* Añade una transición suave para el color de fondo y el color del texto */
+    cursor: pointer;
+  }
+  
+  .contact-button:hover {
+    background-color: #000000;
+    color: #FFFFFF;
+  }
+
+  @media screen and (max-width: 768px) {
+
+    footer {
+      }
+
+    .footer-content {
+      flex-direction: column; /* Apila los elementos verticalmente en dispositivos pequeños */
+      align-items: center; /* Centra los elementos horizontalmente */
+    }
+  
+    .footer-nav,
+    .footer-names,
+    .footer-social {
+      flex: none; /* Ajusta el tamaño de los elementos a su contenido */
+      margin-bottom: 10px; /* Añade espacio entre los elementos */
+      text-align: center; /* Centra el texto horizontalmente */
+    }
+    
+    .footer-social {
+      display: flex;
+      justify-content: center; /* Centra horizontalmente */
+      align-items: center; /* Centra verticalmente */
+    }
+    
+    .footer-social ul {
+      display: flex;
+      justify-content: center; /* Centra horizontalmente */
+      margin-bottom: 10px; /* Añade espacio entre los elementos */
+    }
+    
+    .footer-social li {
+      margin-right: 10px;
+    }
+  
+    .contact-button {
+      width: 100%; /* Ocupa todo el ancho disponible */
+    }
+  }
