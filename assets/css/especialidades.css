@@ -259,6 +259,7 @@ section {
     width: 100vw; /* Establece el ancho al 100% de la ventana */
   }
   .title-container div p {
+    text-align: center;
     margin-top: 7vw;
     text-wrap: wrap;
     font-size: 4vw;
