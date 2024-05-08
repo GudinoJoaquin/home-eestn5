@@ -14,6 +14,7 @@ footer {
   .footer-names,
   .footer-social {
     flex: 1;
+    z-index: 1000; /* Asigna un z-index alto */
   }
   
   .footer-names {
@@ -105,15 +106,15 @@ footer {
   }
 
   /* Personalización de la sombra para cada red social */
-.footer-social img[src="assets/img/facebook.png"]:hover {
+.footer-social img[src="../assets/img/facebook.png"]:hover {
     background-color: rgb(59, 89, 153); /* Cambia el color de fondo al hacer hover para Facebook */
   }
   
-  .footer-social img[src="assets/img/gorjeo.png"]:hover {
+  .footer-social img[src="../assets/img/gorjeo.png"]:hover {
     background-color: rgb(29, 161, 242); /* Cambia el color de fondo al hacer hover para Twitter */
   }
   
-  .footer-social img[src="assets/img/instagram.png"]:hover {
+  .footer-social img[src="../assets/img/instagram.png"]:hover {
     background-color: rgb(216, 40, 119); /* Cambia el color de fondo al hacer hover para Instagram */
   }
   
