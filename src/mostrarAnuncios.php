@@ -34,15 +34,38 @@ $result = $conn->query($sql);
 
 <head>
     <title>Lista de Anuncios</title>
+    <link rel="stylesheet" href="../assets/css/nav.css" />
+    <link rel="stylesheet" href="../assets/css/footer.css" />
     <link id="theme-link" rel="stylesheet" href="../assets/css/mostrar-anuncios-light.css">
-    <!-- Enlace a la hoja de estilos predeterminada -->
-    <button id="theme-toggle">Cambiar Tema</button> <!-- Botón para cambiar el tema -->
-    <a href="./login.php">Login</a> <!-- Enlace para iniciar sesión -->
+    <script src="../assets/js/nav.js"></script>
+    <!--<a href="./login.php">Login</a> -->
 </head>
 
 <body>
-    <div class="container">
-
+    <header><nav id="navbar">
+        <div id="logo" onclick="ocultar()">
+          <img src="../assets/img/logo.svg" alt="Logo" />
+          <p>Menu</p>
+        </div>
+        <div class="container">
+          <div id="nav-content">
+            <a href="../index.html">Inicio</a>
+            <a href="./nosotros.html">Nosotros</a>
+            <button onclick="myFunction()" class="dropbtn">
+              Especialidades
+            </button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#">Informatica</a>
+              <a href="#">Electronica</a>
+              <a href="#">Construcciones</a>
+            </div>
+            <a href="https://eest5mdp.edu.ar/contacto.html">Contacto</a>
+            <a href="./mostrarAnuncios.php">Anuncios</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="parallax-completo">
         <?php
         // Verificar si hay resultados en la consulta
         if ($result->num_rows > 0) {
@@ -84,8 +107,6 @@ $result = $conn->query($sql);
         // Cerrar la conexión a la base de datos
         $conn->close();
         ?>
-    </div>
-
     <script>
         // Obtener el botón y el enlace del tema
         const themeToggle = document.getElementById("theme-toggle");
@@ -105,6 +126,30 @@ $result = $conn->query($sql);
         });
 
     </script>
+    </div>
 </body>
-
+<footer>
+        <div class="footer-content">
+            <div class="footer-nav">
+                <ul>
+                    <li><button href="#" class="contact-button">Contáctanos</button></li>
+                </ul>
+            </div>
+            <div class="footer-names">
+                <p>Escuela de Educación Técnica 5 Mar del Plata</p>
+                <creadores>
+                <a href="https://github.com/GudinoJoaquin" target="_blank" rel="noopener noreferrer">Joaquín Gudiño</a>
+                <a href="https://github.com/FacundoCien" target="_blank" rel="noopener noreferrer">Facundo Cientofante</a>
+                </creadores>
+            </div>
+            <div class="footer-social">
+                <ul>
+                    <li><a href="#"><img src="../assets/img/facebook.png" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="../assets/img/gorjeo.png" alt="Twitter"></a></li>
+                    <li><a href="#"><img src="../assets/img/instagram.png" alt="Instagram"></a></li>
+                </ul>
+            </div>                    
+        </div>
+        
+      </footer>
 </html>

@@ -1,109 +1,97 @@
-/* Scrollbar */
-::-webkit-scrollbar {
-  width: 5px; /* Ancho del scroll */
-  height: 5px; /* Altura del scroll */
-}
-
-/* Cambiar el color del track (fondo del scroll) */
-::-webkit-scrollbar-track {
-  background: #f2f2f2; /* Color del track */
-  transition: background 0.5s ease; /* Transición suave para el cambio de color */
-}
-
-/* Cambiar el color y la forma del thumb (la parte deslizable del scroll) */
-::-webkit-scrollbar-thumb {
-  background: #ff0000; /* Color del thumb */
-  border-radius: 5px; /* Bordes redondeados */
-  transition: background 0.5s ease; /* Transición suave para el cambio de color */
-}
-
-/* Cambiar el color y la forma del thumb al pasar el ratón sobre él */
-::-webkit-scrollbar-thumb:hover {
-  background: #1eff00; /* Color del thumb al pasar el ratón */
-}
-
-/* Estilos generales */
-html {
-  scroll-behavior: smooth; /* Hacer que el scroll sea suave */
-  transition: background 0.5s ease, color 0.5s ease; /* Transición suave para el cambio de color de fondo y texto */
-  background-color: #f2f2f2; /* Color de fondo en modo claro */
-}
-
 body {
+  margin: 0;
+  padding: 0;
   font-family: "system-ui";
-  transition: background 0.5s ease, color 0.5s ease; /* Transición suave para el cambio de color de fondo y texto */
-  background-color: #f2f2f2; /* Color de fondo en modo claro */
+  background-color: #f2f2f2;
 }
 
-.container {
-  border-right: 2px dotted #1eff00;
-  border-left: 2px dotted #ff0000;
+.parallax-completo {
+  width: 100%;
+  background: radial-gradient(
+      circle,
+      rgba(0, 0, 0, 0.664) 100%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    url("../img/idi2o.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  transition: border-color 0.5s ease; /* Transición suave para el cambio de color de borde */
+  flex-direction: column; /* Añade esta línea para que los elementos se posicionen uno debajo del otro */
+  text-align: center; /* Añade esta línea para centrar el texto */
 }
+
 
 .anuncio-container {
+  z-index: 1;
+  background-color: rgb(175, 175, 175);
   width: 80vw;
-  height: 20vw;
+  height: 1000000px; 
   margin: 30px;
   display: flex;
-  overflow: hidden; /* Oculta cualquier contenido que exceda los bordes */
-  transform: perspective(1000px) rotateX(20deg); /* Perspectiva 3D inclinada */
+  overflow: hidden;
+  transform: perspective(1000px) rotateX(20deg);
 }
 
 .contenedor-imagen {
   flex: 3;
-  max-height: auto; /* Establece la altura máxima del contenedor de imagen */
+  max-width: 100%;
 }
 
 .contenedor-imagen img {
   width: 100%;
   height: 100%;
-  border-top-left-radius: 15px; /* Bordes redondeados en la esquina superior izquierda */
-  border-bottom-left-radius: 15px; /* Bordes redondeados en la esquina inferior izquierda */
+  object-fit: cover;
 }
 
 .contenedor-contenido {
-  flex: 6;
+  flex: 7; /* Cambiado de 6 a 7 para dar más espacio al contenido */
   padding: 10px;
-  border-top: 2px solid green; 
+  display: flex;
+  flex-direction: column; /* Para que los elementos se apilen verticalmente */
 }
 
-.contenedor-contenido h2, h4{
-  margin: 20px;
+.contenedor-contenido h2 {
+  margin-bottom: -10px; 
+  font-family:'Courier New', Courier, monospace;
+  text-align: left; /* Alineación del texto a la izquierda */
+} 
+.contenedor-contenido h4 {
   font-family: Georgia, 'Times New Roman', Times, serif;
-}
-.contenedor-contenido h4{
+  text-align: left; /* Alineación del texto a la izquierda */
   color: red;
 }
 
 .contenedor-contenido p {
-  font-family: 'Arial', sans-serif; /* Fuente Arial */
-  color: #333; /* Color oscuro para los párrafos */
-  margin: 20px;
-  margin-top: 30px;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  margin: 10px 0;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
 }
 
 .contenedor-fecha {
   flex: 1.5;
-  display: flex; /* Establece el contenedor como un contenedor flexible */
-  justify-content: flex-end; /* Coloca los elementos al final del contenedor (a la derecha en un contenedor horizontal) */
-  border-bottom: 2px solid red; 
-  border-right: 2px solid red;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .contenedor-fecha h3 {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: green;
   padding: 10px;
-  margin: 0; /* Elimina cualquier margen para evitar espacios adicionales */
+  margin: 0;
 }
 
 @media screen and (max-width: 767px) {
-  /* Estilos para dispositivos móviles */
   .anuncio-container {
+    width: 95vw; /* Ancho del 95% del viewport */
     height: auto; /* Altura automática */
     margin: 15px 0; /* Margen superior e inferior reducido */
   }
@@ -131,5 +119,19 @@ body {
     font-size: 12px; /* Tamaño de fuente reducido */
     margin: 5px 0; /* Margen superior e inferior reducido */
   }
+
+  .parallax-completo {
+    background-image: radial-gradient(
+        circle,
+        rgba(0, 0, 0, 0.664) 100%,
+        rgba(255, 255, 255, 0) 100%
+      ),
+      url("../img/idi2_OLD.jpeg");
+  }
 }
 
+@media (max-height: 1080px) and (max-width: 1920px) {
+  .parallax-completo {
+    height: 100vh;
+  }
+}
