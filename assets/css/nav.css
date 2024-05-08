@@ -9,6 +9,7 @@
   /* background: rgba(0, 0, 0, 0.7); */
   background: transparent;
   transition: all 0.3s;
+  user-select: none;
 }
 
 .container {
@@ -17,12 +18,14 @@
   margin-top: 6vw;
   margin-right: 85vw;
   transition: all 0.3s;
+  user-select: none;
 }
 
 #nav-content {
   /* display: flex; */
   display: none;
   flex-direction: column;
+  user-select: none;
 }
 
 #nav-content a {
@@ -49,7 +52,6 @@
   transition: all 0.3s ease; /* Añadir transición para el logo */
   animation: logoAnimation 2s infinite; /* Aplicar animación al logo */
   user-select: none;
-
 }
 #logo img:hover {
   transform: scale(1.1);
@@ -64,7 +66,6 @@
   cursor: pointer;
   font-weight: 600;
   user-select: none;
-
 }
 
 #logo p:first-letter {
@@ -81,6 +82,7 @@
   cursor: default;
   font-size: 1.5vw;
   display: flex;
+  user-select: none;
 }
 
 .nav-content img{
@@ -88,6 +90,7 @@
   transform: translateY(7px);
   margin-left: 10px;
   filter: invert();
+  user-select: none;
 }
 
 /* Dropdown button on hover & focus */
@@ -106,6 +109,7 @@
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  user-select: none;
 }
 
 /* Links inside the dropdown */
@@ -116,6 +120,7 @@
   text-decoration: none;
   display: block;
   font-size: .5vw;
+  user-select: none;
 }
 
 /* Change color of dropdown links on hover */
@@ -128,6 +133,7 @@
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {
   display: block;
+  user-select: none;
 }
 
 @media (max-width: 768px) {
