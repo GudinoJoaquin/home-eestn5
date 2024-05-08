@@ -14,7 +14,7 @@
     <title>Escuela de Educacion Tecnica 5 Mar del Plata</title>
   </head>
   <body>
-    <header class="z-0">
+    <header>
       <nav id="navbar">
         <div id="logo" onclick="ocultar()">
           <div class="logoest">
@@ -48,59 +48,72 @@ Por supuesto, aquí tienes el texto en un solo párrafo:
         </div>
       </div>
 
-      <section class="sm:flex mx-[10vw] sm:gap-[10vw] sm:justify-center relative z-50">
-        <form action="https://formsubmit.co/infoT5@eest5mdp.edu.ar" method="POST" class="flex flex-col flex-1">
-            <h4 class="sm:text-[2vw] sm:py-[2vw] sm:text-start text-[5vw]">
-                Enviar mensaje
-                <hr class="border-[1.5px] border-red-500 mr-[600px] mt-[3px] w-[40px]" />
-            </h4>
-            <input class="border-solid border border-gray-300 focus:ring-[3px] focus:ring-red-500 focus:ring-opacity-30 focus:outline-none rounded-[5px] p-[.5vw] m-[.5vw] placeholder:italic transition duration-[.3s]" type="text" placeholder="Nombre" name="Nombre" required />
-            <input class="border-solid border border-gray-300 focus:ring-[3px] focus:ring-red-500 focus:ring-opacity-30 focus:outline-none rounded-[5px] p-[.5vw] m-[.5vw] placeholder:italic transition duration-[.3s]" type="email" placeholder="Email" name="Email" required />
-            <textarea class="border-solid border border-gray-300 focus:ring-[3px] focus:ring-red-500 focus:ring-opacity-30 focus:outline-none rounded-[5px] p-[.5vw] m-[.5vw] placeholder:italic transition duration-[.3s] resize-none" rows="17" name="Texto" required></textarea>
-            <button class="bg-[#f85c70] text-white rounded-[5px] p-[.5vw] m-[.5vw] hover:bg-[#f63750] transition duration-[.3s]" type="submit" class="">
-                Enviar
-            </button>
+      <section class="sm:flex mx-[10vw] sm:gap-[10vw] sm:justify-center">
+        <form
+          action="https://formsubmit.co/infoT5@eest5mdp.edu.ar"
+          method="POST"
+          class="flex flex-col flex-1"
+        >
+          <h4 class="sm:text-[2vw] sm:py-[2vw] sm:text-start text-[5vw]">
+            Enviar mensaje
+            <hr class="border-[1.5px] border-red-500 mr-[600px] mt-[3px] w-[40px]" />
+          </h4>
+          <input
+            class="border-solid border border-gray-300 focus:ring-[3px] focus:ring-red-500 focus:ring-opacity-30 focus:outline-none rounded-[5px] p-[.5vw] m-[.5vw] placeholder:italic transition duration-[.3s]"
+            type="text"
+            placeholder="Nombre"
+            name="Nombre"
+            required
+          />
+          <input
+            class="border-solid border border-gray-300 focus:ring-[3px] focus:ring-red-500 focus:ring-opacity-30 focus:outline-none rounded-[5px] p-[.5vw] m-[.5vw] placeholder:italic transition duration-[.3s]"
+            type="email"
+            placeholder="Email"
+            name="Email"
+            required
+          />
+          <textarea
+            class="border-solid border border-gray-300 focus:ring-[3px] focus:ring-red-500 focus:ring-opacity-30 focus:outline-none rounded-[5px] p-[.5vw] m-[.5vw] placeholder:italic transition duration-[.3s] resize-none"
+            rows="17"
+            name="Texto"
+            required
+          ></textarea>
+          <button
+            class="bg-[#f85c70] text-white rounded-[5px] p-[.5vw] m-[.5vw] hover:bg-[#f63750] transition duration-[.3s]"
+            type="submit"
+            class=""
+          >
+            Enviar
+          </button>
         </form>
-    
-        <div class="flex-2 z-50">
-            <div class="">
-                <h4 class="sm:text-[2vw] sm:text-nowrap sm:py-[2vw] text-[5vw] mt-[20px]">
-                    Mantengase en contacto
-                    <hr class="border-[1.5px] border-red-500 w-[45px] mt-[3px]" />
-                </h4>
-                <div class="">
-                  <h6 class="sm:[mx-[50px] text-[20px]] mx-[50px] mt-[20px] text-[20px]">
-                      <i class="fa fa-map ml-[-39px] mr-[10px]"></i>
-                      Dirección :<br />
-                      <a href="https://www.google.com/maps/place/Escuela+De+Educación+Secundaria+Técnica+Nº5+&quot;Amancio+Williams&quot;/@-38.011481,-57.5806625,15z/data=!4m6!3m5!1s0x9584dec66cad85ff:0x2a201849dd878504!8m2!3d-38.011481!4d-57.5806625!16s%2Fg%2F1hf3y76ld?entry=ttu" class="sm:text-[1.3vw] hover:text-red-500 underline underline-offset-2">
-                          Av. Juan B. Justo 4287, B7608 Mar del Plata, Provincia de Buenos Aires
-                      </a>
-                  </h6>
-              </div>
-              
-    
-                <div class="mt-[20px] mb-[50px]">
-                    <h6 class="sm:[mx-[50px] text-[20px]] mx-[50px] mt-[20px] text-[20px]">
-                        <i class="fa fa-envelope ml-[-39px] mr-[14px]"></i>
-                        Email :<br /><a href="" class="sm:text-[1.3vw] text-red-400 hover:text-red-600">
-                            infoT5@gmail.com
-                        </a>
-                    </h6>
-                </div>
 
-                <div class="mt-[20px] mb-[50px]">
-                  <h6 class="sm:[mx-[50px] text-[20px]] mx-[50px] mt-[20px] text-[20px]">
-                      <a href="https://www.google.com/maps/uv?pb=!1s0x9584dec66cad85ff%3A0x2a201849dd878504!3m1!7e115!4s%2Fmaps%2Fplace%2Feestn5%2F%40-38.0116482%2C-57.5808331%2C3a%2C75y%2C38.81h%2C90t%2Fdata%3D*213m4*211e1*213m2*211sYnnzVpfm0XdvSz50K7sWZg*212e0*214m2*213m1*211s0x9584dec66cad85ff%3A0x2a201849dd878504%3Fsa%3DX%26ved%3D2ahUKEwifgYfRiv2FAxUrrpUCHWVcAB4Qpx96BAhJEAA!5seestn5%20-%20Buscar%20con%20Google!15sCgIgAQ&imagekey=!1e2!2sYnnzVpfm0XdvSz50K7sWZg&hl=es&ved=1t%3A206134&ictx=111" class="inline-block">
-                          <button class="z-50 bg-green-800 hover:bg-red-800 text-white rounded-[5px] p-[.5vw] m-[.5vw] transition duration-300 ease-in-out transform hover:scale-105">
-                              ¡Visítanos ahora!
-                          </button>
-                      </a>
-                  </h6>
-              </div>              
-              
+        <div class="flex-2">
+          <div class="">
+            <h4 class="sm:text-[2vw] sm:text-nowrap sm:py-[2vw] text-[5vw] mt-[20px]">
+              Mantengase en contacto
+              <hr class="border-[1.5px] border-red-500 w-[45px] mt-[3px]" />
+            </h4>
+            <div class="">
+              <h6 class="sm:[mx-[50px] text-[20px]] mx-[50px] mt-[20px] text-[20px]">
+                <i class="fa fa-map ml-[-39px] mr-[10px]"></i>
+                Direccion :<br /><a href="" class="sm:text-[1.3vw] hover:text-red-500 underline underline-offset-2">
+                  Av. Juan B. Justo 4287, B7608 Mar del Plata, Provincia de
+                  Buenos Aires
+                </a>
+              </h6>
             </div>
+
+            <div class="mt-[20px] mb-[50px]">
+              <h6 class="sm:[mx-[50px] text-[20px]] mx-[50px] mt-[20px] text-[20px]">
+                <i class="fa fa-envelope ml-[-39px] mr-[14px]"></i>
+                Email :<br /><a href="" class="sm:text-[1.3vw] text-red-400 hover:text-red-600">
+                  infoT5@gmail.com
+                </a>
+              </h6>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
     
       <footer>
         <div class="footer-content">

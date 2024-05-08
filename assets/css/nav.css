@@ -6,10 +6,16 @@
   height: 100%;
   padding: 5px 5px;
   box-sizing: border-box;
-  /* background: rgba(0, 0, 0, 0.7); */
   background: transparent;
   transition: all 0.3s;
   user-select: none;
+  pointer-events: none; /* Deshabilitamos los eventos de puntero en el navbar */
+}
+
+#navbar *,
+#navbar *::before,
+#navbar *::after {
+  pointer-events: auto; /* Permitimos eventos de puntero en todos los elementos dentro del navbar */
 }
 
 .container {
@@ -22,14 +28,12 @@
 }
 
 #nav-content {
-  /* display: flex; */
   display: none;
   flex-direction: column;
   user-select: none;
 }
 
 #nav-content a {
-  /* Fondo transparente con un poco de opacidad */
   color: white;
   text-decoration: none;
   padding: 10px 20px;
@@ -38,21 +42,23 @@
   font-size: 1.5vw;
   user-select: none;
 }
+
 #nav-content a:hover {
   transform: scale(1.15);
   font-weight: 600;
 }
 
 #logo img {
-  position: absolute; /* Posiciona el logo a la izquierda */
+  position: absolute;
   cursor: pointer;
   height: 50px;
   width: auto;
   border-radius: 0%;
-  transition: all 0.3s ease; /* Añadir transición para el logo */
-  animation: logoAnimation 2s infinite; /* Aplicar animación al logo */
+  transition: all 0.3s ease;
+  animation: logoAnimation 2s infinite;
   user-select: none;
 }
+
 #logo img:hover {
   transform: scale(1.1);
 }
@@ -85,7 +91,7 @@
   user-select: none;
 }
 
-.nav-content img{
+.nav-content img {
   width: 15px;
   transform: translateY(7px);
   margin-left: 10px;
@@ -93,14 +99,12 @@
   user-select: none;
 }
 
-/* Dropdown button on hover & focus */
-.dropbtn:hover{
+.dropbtn:hover {
   transition: all .3s ease;
   transform: scale(1.15);
   font-weight: 600;
 }
 
-/* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
   position: relative;
@@ -112,7 +116,6 @@
   user-select: none;
 }
 
-/* Links inside the dropdown */
 .dropdown-content a {
   background-color: transparent;
   color: white;
@@ -123,14 +126,12 @@
   user-select: none;
 }
 
-/* Change color of dropdown links on hover */
 .dropdown-content a:hover {
   transition: all .3s ease;
   transform: scale(1.15);
   font-weight: 600;
 }
 
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {
   display: block;
   user-select: none;
@@ -158,7 +159,6 @@
   }
 
   #nav-content {
-    /* display: flex; */
     display: none;
     flex-direction: column;
   }
@@ -177,14 +177,14 @@
   }
 
   #logo img {
-    position: absolute; /* Posiciona el logo a la izquierda */
-    left: 5px; /* Ajusta la posición del logo */
+    position: absolute;
+    left: 5px;
     cursor: pointer;
     height: 50px;
     width: auto;
     border-radius: 0%;
-    transition: all 0.3s ease; /* Añadir transición para el logo */
-    animation: logoAnimation 2s infinite; /* Aplicar animación al logo */
+    transition: all 0.3s ease;
+    animation: logoAnimation 2s infinite;
   }
   #logo img:hover {
     transform: scale(1.1);
