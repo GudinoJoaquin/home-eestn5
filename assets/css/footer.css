@@ -117,6 +117,18 @@ footer {
   .footer-social img[src="../assets/img/instagram.png"]:hover {
     background-color: rgb(216, 40, 119); /* Cambia el color de fondo al hacer hover para Instagram */
   }
+
+  .footer-social img[src="assets/img/facebook.png"]:hover {
+    background-color: rgb(59, 89, 153); /* Cambia el color de fondo al hacer hover para Facebook */
+  }
+  
+  .footer-social img[src="assets/img/gorjeo.png"]:hover {
+    background-color: rgb(29, 161, 242); /* Cambia el color de fondo al hacer hover para Twitter */
+  }
+  
+  .footer-social img[src="assets/img/instagram.png"]:hover {
+    background-color: rgb(216, 40, 119); /* Cambia el color de fondo al hacer hover para Instagram */
+  }
   
   .contact-button {
     width: 50%;
