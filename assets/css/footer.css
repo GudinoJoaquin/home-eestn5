@@ -123,7 +123,6 @@ footer {
     transition: background-color 0.3s ease; /* Añadimos una transición suave para el color de fondo */
     user-select: none;
   }
-
   /* Personalización de la sombra para cada red social */
 .footer-social img[src="../assets/img/facebook.png"]:hover {
     background-color: rgb(59, 89, 153); /* Cambia el color de fondo al hacer hover para Facebook */

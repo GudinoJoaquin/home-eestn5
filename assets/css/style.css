@@ -239,7 +239,6 @@ body{
   }
 
   .btn-info {
-
     backdrop-filter: blur(10px) brightness(0.8);
     width: 35%;
     height: 7vh;
