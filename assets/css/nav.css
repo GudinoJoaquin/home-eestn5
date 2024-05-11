@@ -1,4 +1,5 @@
 #navbar {
+  z-index: 1000;
   position: fixed;
   top: 0;
   left: -20px;
@@ -59,20 +60,26 @@
   user-select: none;
 }
 
+
 #logo img:hover {
   transform: scale(1.1);
 }
 
 #logo p {
+  background-color: transparent; /* Fondo negro con transparencia */
+  backdrop-filter: blur(10px); /* Aplica un efecto de desenfoque al fondo */
+  border-radius: 100%;
+  width: fit-content; /* Ajusta el ancho al tamaño máximo del texto */
   color: rgb(255, 0, 0);
   position: relative;
-  left: 80px;
-  top: 10px;
+  left: 20px;
+  top: 50px;
   font-size: 1.5vw;
   cursor: pointer;
   font-weight: 600;
   user-select: none;
 }
+
 
 #logo p:first-letter {
   color: green;

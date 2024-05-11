@@ -131,7 +131,7 @@ footer {
     background-color: rgb(59, 89, 153); /* Cambia el color de fondo al hacer hover para Facebook */
   }
   
-  .footer-social img[src="assets/img/correo-electronico (1).png"]:hover {
+  .footer-social img[src="../assets/img/correo-electronico (1).png"]:hover {
     background-color: rgb(255, 0, 0); /* Cambia el color de fondo al hacer hover para Twitter */
   }
   
