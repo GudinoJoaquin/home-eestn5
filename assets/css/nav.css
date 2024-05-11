@@ -1,3 +1,6 @@
+*{
+  -webkit-tap-highlight-color: transparent;
+}
 #navbar {
   z-index: 1000;
   position: fixed;
@@ -11,7 +14,6 @@
   transition: all 0.3s;
   user-select: none;
   pointer-events: none; /* Deshabilitamos los eventos de puntero en el navbar */
-  outline: none; /* Evitar resaltado azul */
 }
 
 #navbar *,
@@ -60,6 +62,7 @@
   animation: logoAnimation 2s infinite;
   user-select: none;
 }
+
 
 #logo img:hover {
   transform: scale(1.1);
@@ -155,7 +158,6 @@
     box-sizing: border-box;
     background: transparent;
     transition: all 0.3s;
-    user-select: none;
   }
 
   .container {
@@ -164,13 +166,11 @@
     margin-top: 10vw;
     margin-right: 85vw;
     transition: all 0.3s;
-    user-select: none;
   }
 
   #nav-content {
     display: none;
     flex-direction: column;
-    user-select: none;
   }
 
   #nav-content a {
@@ -180,7 +180,6 @@
     transition: all 0.3s ease;
     cursor: default;
     font-size: 5vw;
-    user-select: none;
   }
   #nav-content a:hover {
     transform: scale(1.15);
@@ -196,14 +195,12 @@
     border-radius: 0%;
     transition: all 0.3s ease;
     animation: logoAnimation 2s infinite;
-    user-select: none;
   }
   #logo img:hover {
     transform: scale(1.1);
   }
 
   #logo p {
-    user-select: none;
     color: rgb(255, 0, 0);
     position: relative;
     left: 20px;
