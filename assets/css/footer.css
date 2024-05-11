@@ -134,7 +134,7 @@ footer {
   .footer-social img[src="../assets/img/correo-electronico (1).png"]:hover {
     background-color: rgb(255, 0, 0); /* Cambia el color de fondo al hacer hover para Twitter */
   }
-  
+
   .footer-social img[src="../assets/img/instagram.png"]:hover {
     background-color: rgb(216, 40, 119); /* Cambia el color de fondo al hacer hover para Instagram */
   }

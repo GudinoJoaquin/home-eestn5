@@ -8,7 +8,6 @@
 ::-webkit-scrollbar-track {
     background: #f1f1f1; /* Color de fondo de la barra de desplazamiento */
 }
-
 /* Estilos del mango del scrollbar */
 ::-webkit-scrollbar-thumb {
     background: #888; /* Color del mango del scrollbar */

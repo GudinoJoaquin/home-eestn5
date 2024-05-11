@@ -24,7 +24,6 @@ body {
   text-align: center; /* Añade esta línea para centrar el texto */
 }
 
-
 .anuncio-container {
   z-index: 1;
   background-color: rgb(175, 175, 175);

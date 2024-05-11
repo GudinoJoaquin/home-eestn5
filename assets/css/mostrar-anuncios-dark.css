@@ -9,7 +9,6 @@
   background: #1a1a1a; /* Color del track en modo oscuro */
   transition: background 0.5s ease; /* Transición suave para el cambio de color */
 }
-
 /* Cambiar el color y la forma del thumb (la parte deslizable del scroll) */
 ::-webkit-scrollbar-thumb {
   background: #00FF00; /* Color del thumb en modo oscuro */

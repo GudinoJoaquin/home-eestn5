@@ -7,7 +7,6 @@ h1 {
     animation: slideText 10s linear infinite; /* Animación de desplazamiento */
     transition: color 0.5s ease; /* Transición suave del cambio de color */
 }
-
 /* Animación de desplazamiento horizontal */
 @keyframes slideText {
     0% { transform: translateX(-50%); }
