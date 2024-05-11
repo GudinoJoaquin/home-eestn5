@@ -64,7 +64,7 @@
 }
 
 
-#logo img:hover {
+#logo p:hover, img:hover {
   transform: scale(1.1);
 }
 
@@ -81,6 +81,7 @@
   cursor: pointer;
   font-weight: 600;
   user-select: none;
+  transition: all 0.3s ease;
 }
 
 
