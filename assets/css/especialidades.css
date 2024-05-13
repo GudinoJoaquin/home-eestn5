@@ -190,11 +190,25 @@ section {
 }
 .especialidades-cont h2 {
   font-size: 3vw;
+  font-weight: bold; /* Agrega negrita al título */
+  text-decoration: underline; /* Subraya el título */
 }
+
 .especialidades-cont p {
-  text-wrap: wrap;
   font-size: 1.5vw;
   margin-top: 1.5vw;
+  font-style: italic; /* Agrega cursiva al texto */
+}
+
+.especialidades-cont ol {
+  margin-top: 1.5vw;
+  margin-left: 2vw;
+}
+
+.especialidades-cont ol li {
+  font-size: 1.5vw;
+  margin-top: 0.5vw;
+  font-weight: bold; /* Agrega negrita a los elementos de la lista */
 }
 
 #informatica {
@@ -323,11 +337,6 @@ section {
     margin-bottom: -20px;
   }
 
-  .location iframe {
-    width: 70vw;
-    height: 70vw;
-  }
-
   .nav-esp {
     display: flex;
     gap: 20px;
@@ -340,21 +349,6 @@ section {
   .nav-esp li {
     font-size: 4vw;
     margin-top: -1vw;
-  }
-
-  .especialidades-cont {
-    text-align: center;
-    margin-top: 5vw;
-  }
-
-  .especialidades-cont h2 {
-    font-size: 7vw;
-  }
-
-  .especialidades-cont p {
-    text-align: justify;
-    font-size: 4vw;
-    margin-top: 5vw;
   }
 
   .especialidades-cont button {
@@ -370,5 +364,31 @@ section {
     background: #f63750;
     transform: scale(1.2);
     transition: all 0.3s;
+  }
+
+  .especialidades-cont {
+    text-align: justify; /* Cambia el texto a justificado */
+    margin: 0 5vw 4vw 5vw; /* Ajusta los márgenes */
+  }
+  
+  .especialidades-cont h2 {
+    font-size: 7vw; /* Ajusta el tamaño del título */
+  }
+  
+  .especialidades-cont p {
+    font-size: 4vw; /* Ajusta el tamaño del texto */
+    margin-top: 5vw; /* Ajusta el margen superior */
+  }
+  
+  .especialidades-cont ol {
+    margin-top: 5vw; /* Ajusta el margen superior */
+    margin-left: 0; /* Elimina el margen izquierdo */
+    padding-left: 0; /* Elimina el relleno izquierdo */
+    padding: 20px;
+  }
+  
+  .especialidades-cont ol li {
+    font-size: 4vw; /* Ajusta el tamaño del texto */
+    margin-top: 2vw; /* Ajusta el margen superior */
   }
 }
