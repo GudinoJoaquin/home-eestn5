@@ -280,11 +280,11 @@ section {
     margin-top: 5vw; /* Ajusta la posición vertical del título */
     width: 100vw; /* Establece el ancho al 100% de la ventana */
   }
-  .title-container div p {
+  .title-container p {
     text-align: center;
     margin-top: 7vw;
     text-wrap: wrap;
-    font-size: 4vw;
+    font-size: 3.6vw;
   }
   .title-container div {
     margin: 7vw 7vw 0 7vw;
@@ -372,11 +372,11 @@ section {
   }
   
   .especialidades-cont h2 {
-    font-size: 7vw; /* Ajusta el tamaño del título */
+    font-size: 5vw; /* Ajusta el tamaño del título */
   }
   
   .especialidades-cont p {
-    font-size: 4vw; /* Ajusta el tamaño del texto */
+    font-size: 3vw; /* Ajusta el tamaño del texto */
     margin-top: 5vw; /* Ajusta el margen superior */
   }
   
@@ -388,7 +388,7 @@ section {
   }
   
   .especialidades-cont ol li {
-    font-size: 4vw; /* Ajusta el tamaño del texto */
+    font-size: 3vw; /* Ajusta el tamaño del texto */
     margin-top: 2vw; /* Ajusta el margen superior */
   }
 }
