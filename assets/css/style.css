@@ -196,6 +196,10 @@ body{
 @media screen and (max-width: 768px) {
   /* Estilos para dispositivos móviles */
 
+  body{
+    overflow-y:scroll; /* Evita el desplazamiento horizontal */
+  }
+
   .parallax-completo {
     background-image: radial-gradient(
         circle,
