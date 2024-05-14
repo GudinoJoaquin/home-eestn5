@@ -11,22 +11,29 @@
     <link rel="eestn5" href="../assets/img/lde.png" type="image/x-icon">
     <title>Escuela de Educación Técnica 5 Mar del Plata</title>
     <style>
-        #qr-container {
+        .responsive-container {
             display: flex;
-            justify-content: center;
-            align-items: center;
             flex-direction: column;
-            height: 100vh;
-            padding: 20px; /* Ajustar el padding según sea necesario */
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 0px, 10px;
+            margin-top:100px;
+            margin-bottom: 100px;
         }
 
-        #qr-container iframe {
-            margin-bottom: 20px; /* Espacio entre el formulario y la imagen */
+        .responsive-container iframe {
+            width: 100%;
+            max-width: 600px;
+            height: 450px;
+            border: 0;
         }
 
-        #qr-container img {
-            width: 250px; /* Tamaño ligeramente mayor para la imagen */
-            height: auto; /* Para mantener la proporción */
+        .responsive-container img {
+            margin-top: 10px;
+            max-width: 250px;
+            width: 100%;
+            height: auto;
         }
     </style>
 </head>
@@ -56,8 +63,8 @@
         <br></br>
         <h1 id="ntitle" 1>↓</h1>
     </div>
-    <div id="qr-container">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdBMCGBn1pEaNzjGjB0IZoE3jHJn-rrBC07V2N4N-zSau6Yrw/viewform?embedded=true" width="640" height="563" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+    <div class="responsive-container">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdBMCGBn1pEaNzjGjB0IZoE3jHJn-rrBC07V2N4N-zSau6Yrw/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
         <img src="../assets/img/qr.svg" alt="QR Code">
     </div>
     <footer>
