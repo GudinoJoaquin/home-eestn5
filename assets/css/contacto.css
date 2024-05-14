@@ -63,11 +63,14 @@
 }
 
 .title-container p {
+  backdrop-filter: blur(8px); /* Aplica un desenfoque de 8px al fondo */
+  background-color: rgba(0, 0, 0, 0.219); /* Fondo semi-transparente */
   margin-top: 4vw;
   color: white;
-  text-wrap: wrap;
+  text-wrap: wrap; /* No existe la propiedad 'text-wrap', puede que quisieras decir 'white-space' */
   font-size: 1.5vw;
 }
+
 
 #title {
   font-family: "system-ui";

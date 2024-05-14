@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/nosotros.css" />
+    <link rel="stylesheet" href="../assets/css/footer.css" />
+    <link rel="stylesheet" href="../assets/css/nav.css" />
+    <script src="../assets/js/redirect.js"></script>
+    <script src="../assets/js/nav.js"></script>
+    <link rel="eestn5" href="../assets/img/lde.png" type="image/x-icon">
+    <title>Escuela de Educación Técnica 5 Mar del Plata</title>
+    <style>
+        #qr-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            padding: 20px; /* Ajustar el padding según sea necesario */
+        }
+
+        #qr-container iframe {
+            margin-bottom: 20px; /* Espacio entre el formulario y la imagen */
+        }
+
+        #qr-container img {
+            width: 250px; /* Tamaño ligeramente mayor para la imagen */
+            height: auto; /* Para mantener la proporción */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div id="logo" onclick="ocultar()">
+                <div class="logoest">
+                    <img src="../assets/img/logo.svg" alt="Logo" />
+                </div>
+                <p>Menú</p>
+            </div>
+            <div class="container">
+                <div id="nav-content">
+                    <a href="../index.html">Inicio</a>
+                    <a href="./especialidades.html">Especialidades</a>
+                    <a href="./contacto.html">Contacto</a>
+                    <a href="./nosotros.html">Nosotros</a>
+                    <!-- <a href="./mostrarAnuncios.php">Anuncios</a> -->
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="parallax-completo">
+        <h1 id="ntitle">Feedback</h1>
+        <h2 id="nsubtitle">¡Comparte tu opinión con el siguiente formulario!</h2>
+        <br></br>
+        <h1 id="ntitle" 1>↓</h1>
+    </div>
+    <div id="qr-container">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdBMCGBn1pEaNzjGjB0IZoE3jHJn-rrBC07V2N4N-zSau6Yrw/viewform?embedded=true" width="640" height="563" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+        <img src="../assets/img/qr.svg" alt="QR Code">
+    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-nav">
+                <ul>
+                    <li><button onclick="window.location.href ='../src/contacto.html';" class="contact-button">Contáctanos</button></li>
+                    <li><button onclick="window.location.href ='../src/contacto.html';" class="contact-button">Nosotros</button></li>
+                    <li><button onclick="window.location.href ='../src/contacto.html';" class="contact-button">Inicio</button></li>
+                    <li><button onclick="window.location.href ='../src/contacto.html';" class="contact-button">Especialidades</button></li>
+                </ul>                        
+            </div>  
+            <div class="footer-social">
+                <ul>
+                    <li><a href="https://www.facebook.com/EEST5MDP/?locale=es_LA"><img src="../assets/img/facebook.png" alt="Facebook"></a></li>
+                    <li><a href="https://www.instagram.com/tecnicacinco_mdq/?hl=es-la"><img src="../assets/img/instagram.png" alt="Instagram"></a></li>
+                    <li><a href="mailto:infoT5@gmail.com"><img src="/assets/img/correo.png" alt="Gmail"></a></li>
+                </ul>
+            </div>                  
+        </div>
+    </footer>     
+</body>
+</html>

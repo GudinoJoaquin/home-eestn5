@@ -185,6 +185,9 @@ body{
 
 
 @media (max-height: 1080px) and (max-width: 1920px) {
+  body{
+    overflow-y: hidden; /* Evita el desplazamiento horizontal */
+  }
   .parallax-completo {
     height: 91.1vh;
   }

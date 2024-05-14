@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../assets/css/nosotros.css" />
-    <link rel="stylesheet" href="../assets/css/footer.css">
-    <link rel="stylesheet" href="../assets/css/nav.css"/>
+    <link rel="stylesheet" href="../assets/css/footer.css" />
+    <link rel="stylesheet" href="../assets/css/nav.css" />
     <script src="../assets/js/redirect.js"></script>
     <script src="../assets/js/nav.js"></script>
-    <meta charset="utf-8" />
-    <title>Escuela de Educacion Tecnica 5 Mar del Plata</title>
+    <link rel="eestn5" href="../assets/img/lde.png" type="image/x-icon">
+    <title>Escuela de Educación Técnica 5 Mar del Plata</title>
   </head>
   <body>
     <header>
@@ -17,23 +17,25 @@
         <div id="logo" onclick="ocultar()">
           <div class="logoest">
             <img src="../assets/img/logo.svg" alt="Logo" />
-          <p>Menú</p>
           </div>
-        </div>        
+          <p>Menú</p>
+        </div>
         <div class="container">
           <div id="nav-content">
             <a href="../index.html">Inicio</a>
-            <a href="./especialidades.html">Especialidades</a >
+            <a href="./especialidades.html">Especialidades</a>
             <a href="./contacto.html">Contacto</a>
-            <a href="./mostrarAnuncios.php">Anuncios</a>
+            <a href="./feedback.html">FeedBack</a>
           </div>
         </div>
       </nav>
     </header>
-
-    <main>
       <div class="parallax-completo">
-        <div class="blur-container">
+        <h1 id="ntitle">Escuela de Educación</h1>
+        <h1 id="ntitle">Técnica Numero 5</h1>
+        <h2 id="nsubtitle">Mar del Plata</h2>
+      </div>
+      <div class="blur-container">
         <div class="title-container">
           <h1 id="title">Nosotros</h1>
           <div>
@@ -52,7 +54,7 @@
               carrera profesional en diversos campos.
               <br /><br />
               Nuestra institución ofrece diferentes especializaciones técnicas
-              en informática, electrónica y construcciones
+              en informática, electrónica y construcciones.
             </p>
           </div>
         </div>
@@ -60,60 +62,58 @@
           <img src="../assets/img/idi2_OLD.jpeg" alt="Imagen">
         </div>
       </div>
-      </div>
-
+      <br>
       <div class="objective">
         <div class="obj-left">
-            
-            <img src="../assets/img/l1b.svg" alt="Logo 1">
-            <img src="../assets/img/l2b.svg" alt="Logo 2">
+          <img src="../assets/img/l1b.svg" alt="Logo 1">
+          <img src="../assets/img/l2b.svg" alt="Logo 2">
         </div>
         <div class="obj-middle">
-            <div class="obj-text">
-                <h2>Nuestros Objetivos</h2>
-                <br>
-                <p>Nuestro principal objetivo en la EEST N°5 es proporcionar una educación integral y de calidad que prepare a nuestros estudiantes para enfrentar los desafíos del mundo actual y futuro.</p>
-                <br>
-                <p>Buscamos fomentar el desarrollo de habilidades técnicas, críticas y sociales en un ambiente inclusivo y respetuoso, donde cada estudiante pueda alcanzar su máximo potencial y contribuir positivamente a la sociedad.</p>
-            </div>
+          <div class="obj-text">
+            <h2>Nuestros Objetivos</h2>
+            <br>
+            <p>Nuestro principal objetivo en la EEST N°5 es proporcionar una educación integral y de calidad que prepare a nuestros estudiantes para enfrentar los desafíos del mundo actual y futuro.</p>
+            <br>
+            <p>Buscamos fomentar el desarrollo de habilidades técnicas, críticas y sociales en un ambiente inclusivo y respetuoso, donde cada estudiante pueda alcanzar su máximo potencial y contribuir positivamente a la sociedad.</p>
+          </div>
         </div>
         <div class="obj-right">
-            <img src="../assets/img/l3b.svg" alt="Logo 3">
-            <img src="../assets/img/l4b.svg" alt="Logo 4">
+          <img src="../assets/img/l3b.svg" alt="Logo 3">
+          <img src="../assets/img/l4b.svg" alt="Logo 4">
         </div>
-    </div>
-
+      </div>
+      <br>
       <section class="unete">
         <h2>Únete a nosotros</h2>
         <p>
           Si estás interesado en formar parte de nuestra comunidad educativa o
-          deseas obtener más información, !no dudes en ponerte en contacto con
+          deseas obtener más información, ¡no dudes en ponerte en contacto con
           nosotros! Estamos aquí para ayudarte a alcanzar tus metas educativas y
-          profesionales
+          profesionales.
         </p>
         <button onclick="redirect('./contacto.html')">
-          Contactanos
+          Contáctanos
         </button>
       </section>
       <footer>
         <div class="footer-content">
-            <div class="footer-nav">
-                <ul>
-                <li><button onclick="window.location.href = '../index.html';" class="contact-button">Inicio</button></li>
-                </ul>                        
-            </div>
-            <div class="footer-names">
-              <p>Escuela de Educación Técnica 5 Mar del Plata</p>
-          </div>
-            <div class="footer-social">
-                <ul>
-                    <li><a href="https://www.facebook.com/EEST5MDP/?locale=es_LA"><img src="../assets/img/facebook.png" alt="Facebook"></a></li>
-                    <li><a href="https://www.instagram.com/tecnicacinco_mdq/?hl=es-la"><img src="../assets/img/instagram.png" alt="Instagram"></a></li>
-                    <li><a href="mailto:infoT5@gmail.com"><img src="../assets/img/correo-electronico (1).png" alt="Gmail"></a></li>
-                  </ul>
-            </div>                  
+          <div class="footer-nav">
+            <ul>
+              <li><button onclick="window.location.href ='../src/contacto.html';" class="contact-button">Contáctanos</button></li>
+              <li><button onclick="window.location.href ='../src/feedback.html';" class="contact-button">FeedBack</button></li>
+              <li><button onclick="window.location.href ='../index.html';" class="contact-button">Inicio</button></li>
+              <li><button onclick="window.location.href ='../src/especialidades.html';" class="contact-button">Especialidades</button></li>
+            </ul>                        
+          </div>  
+          <div class="footer-social">
+            <ul>
+              <li><a href="https://www.facebook.com/EESTN5MDP/"><img src="../assets/img/facebook.png" alt="Facebook"></a></li>
+              <li><a href="https://www.instagram.com/tecnicacinco_mdq/?hl=es-la"><img src="../assets/img/instagram.png" alt="Instagram"></a></li>
+              <li><a href="mailto:infoT5@gmail.com"><img src="/assets/img/correo.png" alt="Gmail"></a></li>
+            </ul>
+          </div>                  
         </div>
-    </footer>      
+      </footer>     
     </main>
   </body>
 </html>
